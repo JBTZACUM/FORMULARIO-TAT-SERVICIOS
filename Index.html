@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+    <style>
+      body { font-family: Arial; padding: 20px; max-width: 900px; margin: auto; background-color: #f9f9f9; }
+      h2 { text-align: center; color: #2c3e50; }
+      label { display: block; margin-top: 15px; font-weight: bold; }
+      input, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+      input[type="submit"] { margin-top: 20px; background-color: #2980b9; color: white; border: none; padding: 10px; cursor: pointer; }
+      input[type="submit"]:hover { background-color: #1c5980; }
+    </style>
+  </head>
+  <body>
+    <h2>Formulario de Registro</h2>
+    <form method="post" enctype="multipart/form-data"
+          action="https://script.google.com/macros/s/AKfycbw7WKMfyeORQusUhbT4KWaAiXAxoLcXbhO6DcKWWdNZqiAZOfyaj-lC94SjxF6PYMfv/exec">
+      <label>Fecha: <input type="date" name="fecha" required></label>
+      <label>Nombre: <input type="text" name="nombre" required></label>
+      <label>RFC: <input type="text" name="rfc" required></label>
+      <label>Teléfono: <input type="tel" name="telefono" required></label>
+      <label>Correo: <input type="email" name="correo" required></label>
+      <label>No. Convenio: <input type="text" name="convenio"></label>
+      <label>Crédito: <input type="number" name="credito" step="0.01"></label>
+      <label>Son Pesos: <input type="number" name="pesos" step="0.01"></label>
+      <label>% Interés: <input type="number" name="interes" step="0.01"></label>
+      <label>No. de Pagos: <input type="number" name="pagos"></label>
+      <label>INE: <input type="text" name="ine"></label>
+      <label>Domicilio: <textarea name="domicilio" rows="3"></textarea></label>
+      <label>Originario de: <input type="text" name="originario"></label>
+      <label>Fecha de Nacimiento: <input type="date" name="nacimiento"></label>
+      <label>Foto INE Frente: <input type="file" name="foto_ine_frente" required></label>
+      <label>Foto INE Atrás: <input type="file" name="foto_ine_atras" required></label>
+      <label>Comprobante de Domicilio: <input type="file" name="comp_domicilio" required></label>
+      <label>Estado de Cuenta: <input type="file" name="edo_cuenta" required></label>
+      <label>Comprobante de Ingresos: <input type="file" name="comp_ingresos"></label>
+       
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
